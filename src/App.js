@@ -1,25 +1,27 @@
-import logo from './logo.svg';
+// App.js
+import React from 'react';
+import Sidebar from './components/Sidebar/Sidebar';
 import './App.css';
+import Chat from './components/Chat/Chat';
+import Home from './components/Home/Home';
+import People from './components/People/People';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import DirectMessanges from './components/DirectMessanges/DirectMessanges';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="app">
+        <Sidebar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/chat" element={<Chat />} />
+          <Route path="/people" element={<People />} />
+          <Route path="/direct" element={<DirectMessanges />} />
+        </Routes>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
