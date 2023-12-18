@@ -1,11 +1,9 @@
-import React from 'react';
+import React from "react";
 
 const DirectMessanges = () => {
-    return (
-        <div>
-            <h1>direct messanges</h1>
-        </div>
-    );
+  return <div>
+    <h1>Direct Messages</h1>
+  </div>;
 };
 
 export default DirectMessanges;
