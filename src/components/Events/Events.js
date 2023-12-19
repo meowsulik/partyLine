@@ -1,10 +1,12 @@
 import React from "react";
+import Header from "../Header/Header";
 
 const Events = () => {
   return (
-    <div>
-      <h2>Events</h2>
-    </div>
+    <>
+     <Header/> 
+     <h2>evets</h2>
+    </>
   );
 };
 

@@ -1,22 +1,22 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
-import "./Sidebar.css";
+import style from "./Sidebar.module.css";
 
 const Sidebar = () => {
   return (
-    <div className="App">
-      <div className="wrap">
-        <div className="main__wrap">
-          <div className="box1">
-            <div className="button__wrap">
-              <img
-                alt="avatar"
-                src="https://images.console.xyz/cdn-cgi/image/width=252,height=252,fit=crop,quality=75,dpr=1/https://console-prod-static-back.s3.amazonaws.com/media/AA731851-790F-4BD3-8EAB-D47B6D17613B.png"
-                draggable="false"
-                className="sc-koXPp caCvie"
-              />
-              <p>Party Line💜</p>
-              <div className="updown__arrow">
+    <div className={style.app}>
+          <div className={style.main__boxButton}>
+            <div className={style.button__wrap}>
+              <div className={style.button__box}>
+                <img
+                  alt="avatar"
+                  src="https://images.console.xyz/cdn-cgi/image/width=252,height=252,fit=crop,quality=75,dpr=1/https://console-prod-static-back.s3.amazonaws.com/media/AA731851-790F-4BD3-8EAB-D47B6D17613B.png"
+                  draggable="false"
+                  className="sc-koXPp caCvie"
+                />
+                <p>Party Line💜</p>
+              </div>
+              <div className={style.updown__arrow}>
                 <svg
                   width="8"
                   height="12"
@@ -45,9 +45,11 @@ const Sidebar = () => {
                 </svg>
               </div>
             </div>
-            <div className="box2">
-              <div className="nav__wrap">
-                <Link to="/">
+          </div>
+          <div className={style.box2box3}>
+            <div className={style.box2}>
+              <div className={style.nav__wrap}>
+                <Link className={style.Link} to="/home">
                   <svg
                     width="24"
                     height="24"
@@ -64,8 +66,8 @@ const Sidebar = () => {
                   <p>Home</p>
                 </Link>
               </div>
-              <div className="nav__wrap">
-                <Link to="/chat">
+              <div className={style.nav__wrap}>
+                <Link className={style.Link} to="/chat">
                   <svg
                     width="24"
                     height="24"
@@ -83,8 +85,8 @@ const Sidebar = () => {
                   <p>Chat</p>
                 </Link>
               </div>
-              <div className="nav__wrap">
-                <Link to="/people">
+              <div className={style.nav__wrap}>
+                <Link className={style.Link} to="/people">
                   <svg
                     viewBox="0 0 24 24"
                     fill="none"
@@ -105,9 +107,9 @@ const Sidebar = () => {
                 </Link>
               </div>
             </div>
-            <div className="box3">
-              <div className="direct__wrap">
-                <Link to="/direct">
+            <div className={style.box3}>
+              <div className={style.direct__wrap}>
+                <Link className={style.Link} to="/direct">
                   <svg
                     width="16"
                     height="16"
@@ -127,11 +129,9 @@ const Sidebar = () => {
                 </Link>
               </div>
             </div>
-            <Outlet />
           </div>
+          <Outlet />
         </div>
-      </div>
-    </div>
   );
 };
 

@@ -30,6 +30,17 @@ const Main = () => {
           </div>
         </div>
       </div>
+      <h2>LOL</h2>
+      <h2>LOL</h2>
+      <h2>LOL</h2>
+      <h2>LOL</h2>
+      <h2>LOL</h2>
+      <h2>LOL</h2>
+      <h2>LOL</h2>
+      <h2>LOL</h2>
+      <h2>LOL</h2>
+      <h2>LOL</h2>
+      <h2>LOL</h2>
     </>
   );
 };

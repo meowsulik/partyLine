@@ -1,10 +1,12 @@
 import React from "react";
+import Header from "../Header/Header";
 
 const Pages = () => {
   return (
-    <div>
-      <h2>Pages</h2>
-    </div>
+    <>
+     <Header/>
+     <h2>pages</h2>
+    </>
   );
 };
 

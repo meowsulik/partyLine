@@ -18,19 +18,26 @@ import DirectMessanges from "./components/DirectMessanges/DirectMessanges";
 
 const App = () => {
   return (
-    <div>
+    <div className="main__wrap">
       <BrowserRouter>
         <Sidebar />
-        <Header />
-        <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/events" element={<Events />} />
-          <Route path="/pages" element={<Pages />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/chat" element={<Chat />} />
-          <Route path="/people" element={<People />} />
-          <Route path="/direct" element={<DirectMessanges />} />
-        </Routes>
+        <div className="lolkek">
+          {/* <Header /> */}
+          <Routes>
+            <Route path="/" element={<Main />} />
+            <Route path="/events" element={<Events />} />
+            <Route path="/pages" element={<Pages />} />
+            
+            <Route path="/home" element={<Home />}>
+
+              <Route path="activity" element={<Main />} />
+
+            </Route>
+            <Route path="/chat" element={<Chat />} />
+            <Route path="/people" element={<People />} />
+            <Route path="/direct" element={<DirectMessanges />} />            
+          </Routes>
+        </div>
       </BrowserRouter>
     </div>
   );

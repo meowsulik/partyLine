@@ -1,19 +1,18 @@
 header {
   backdrop-filter: blur(7px);
   background-color: rgb(22, 22, 22);
-  /* position: fixed; */
-  width: 100%;
+  position: fixed;
+  width: 80%;
   padding: 40px 30px 40px 30px;
   z-index: 10;
-  margin-left: 18%;
   border-block-end: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .header__nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
+
 
 .header__nav ul {
   display: flex;
@@ -28,17 +27,20 @@ header {
   padding: 0;
 }
 
+.avatar {
+  display: flex;
+  align-items: center;
+  z-index: 20;
+  width: 100%;
+  justify-content: flex-end;
+}
+
 .header__avatar {
   color: white;
   background: #f6f6f6;
   z-index: 10;
   width: 28px;
   border-radius: 10px;
-}
-
-.avatar {
-  display: flex;
-  align-items: center;
 }
 
 .name__profile {
@@ -56,11 +58,11 @@ header {
   margin: 0 0 0 6px;
 }
 
-.header__nav ul :focus {
+.header__nav li a:focus {
   color: white;
-  transition: all 1s ease-in-out 0s;
+  transition: .5s ease-out;
 }
 
-.name__profile:hover {
+.name__profile :hover {
   background-color: rgba(50, 49, 49, 0.72);
 }

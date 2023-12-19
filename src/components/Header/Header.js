@@ -9,7 +9,7 @@ const Header = () => {
         <div className={s.header__nav}>
           <ul>
             <li>
-              <NavLink className={s.navlink} to="/">
+              <NavLink className={s.navlink} to="/home/activity">
                 Activity
               </NavLink>
             </li>
@@ -24,6 +24,7 @@ const Header = () => {
               </NavLink>
             </li>
           </ul>
+
           <div className={s.avatar}>
             <img
               src="https://api.dicebear.com/5.x/lorelei/svg?seed=InfiniteWayfarer592lightBlue100&amp;backgroundColor=3399FF&amp;mouth=happy01,happy02,happy03,happy04,happy05,happy12,happy17,sad02"
