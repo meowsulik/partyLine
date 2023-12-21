@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/partyLine/static/css/main.c79ebedb.css",
-    "main.js": "/partyLine/static/js/main.87c058f9.js",
-    "index.html": "/partyLine/index.html",
-    "main.c79ebedb.css.map": "/partyLine/static/css/main.c79ebedb.css.map",
-    "main.87c058f9.js.map": "/partyLine/static/js/main.87c058f9.js.map"
+    "main.css": "/static/css/main.c79ebedb.css",
+    "main.js": "/static/js/main.87c058f9.js",
+    "index.html": "/index.html",
+    "main.c79ebedb.css.map": "/static/css/main.c79ebedb.css.map",
+    "main.87c058f9.js.map": "/static/js/main.87c058f9.js.map"
   },
   "entrypoints": [
     "static/css/main.c79ebedb.css",
