@@ -2,8 +2,10 @@ header {
   backdrop-filter: blur(7px);
   background-color: rgb(22, 22, 22);
   position: fixed;
-  width: 80%;
-  padding: 40px 30px 40px 30px;
+  width: 100%;
+  height: 110px;
+  position: relative;
+  padding: 40px 0px;
   z-index: 10;
   border-block-end: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -12,7 +14,6 @@ header {
   display: flex;
   justify-content: space-between;
 }
-
 
 .header__nav ul {
   display: flex;
@@ -25,6 +26,7 @@ header {
   font-size: 14px;
   color: #848484;
   padding: 0;
+  transition: all 0.3s ease 0s;
 }
 
 .avatar {
@@ -58,11 +60,12 @@ header {
   margin: 0 0 0 6px;
 }
 
-.header__nav li a:focus {
+.navlink:hover,
+.navlink:focus {
   color: white;
-  transition: .5s ease-out;
+  outline: none;
 }
 
-.name__profile :hover {
-  background-color: rgba(50, 49, 49, 0.72);
+.name__profile:hover {
+  background-color: rgba(82, 82, 82, 0.72);
 }

@@ -14,28 +14,30 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import Chat from "./components/Chat/Chat";
 import Home from "./components/Home/Home";
 import People from "./components/People/People";
-import DirectMessanges from "./components/DirectMessanges/DirectMessanges";
+import DirectMessanges from './components/DirectMessanges/DirectMessanges'
+import Updates from "./components/Updates/Updates";
+import General from "./components/General/General";
+import Announcements from "./components/Announcements/Announcements";
+import LetsVote from "./components/LetsVote/LetsVote";
 
 const App = () => {
   return (
     <div className="main__wrap">
       <BrowserRouter>
-        <Sidebar />
-        <div className="lolkek">
-          {/* <Header /> */}
+        {/* <Sidebar /> */}
+        <div className="main__part">
           <Routes>
-            <Route path="/" element={<Main />} />
+            <Route path="/" element={<Home />} />
             <Route path="/events" element={<Events />} />
             <Route path="/pages" element={<Pages />} />
-            
-            <Route path="/home" element={<Home />}>
-
-              <Route path="activity" element={<Main />} />
-
-            </Route>
+            <Route path="/home" element={<Home />}/>
             <Route path="/chat" element={<Chat />} />
             <Route path="/people" element={<People />} />
-            <Route path="/direct" element={<DirectMessanges />} />            
+            <Route path="/direct" element={<DirectMessanges />} />  
+            <Route path="/updates" element={<Updates/>} />      
+            <Route path="/general" element={<General/>} />      
+            <Route path="/announcements" element={<Announcements/>} /> 
+            <Route path="/letsvote" element={<LetsVote/>} /> 
           </Routes>
         </div>
       </BrowserRouter>

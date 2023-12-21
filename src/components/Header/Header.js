@@ -9,7 +9,7 @@ const Header = () => {
         <div className={s.header__nav}>
           <ul>
             <li>
-              <NavLink className={s.navlink} to="/home/activity">
+              <NavLink className={s.navlink} to="/home">
                 Activity
               </NavLink>
             </li>
