@@ -3,6 +3,7 @@ import Header from "./components/Header/Header";
 import "./App.css";
 import {
   BrowserRouter,
+  Outlet,
   Route,
   BrowserRouter as Router,
   Routes,
