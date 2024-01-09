@@ -1,29 +1,31 @@
 .app {
   display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  width: 100px;
+  width: 100%;
   background-color: rgb(22, 22, 22);
   border-right: 1px solid rgba(255, 255, 255, 0.08);
+  height: 110px;
 }
 
 .Link {
-  gap: 10px;
   transition: 0.3s ease-in-out;
   color: white;
 }
+.nav__wrap {
+  display: flex;
+  align-items: center;
+}
 
-.nav__wrap:hover {
-  background-color: rgb(31, 31, 31);
+.Link svg:active {
+  color: white;
 }
 
 .nav__wrap a {
   display: flex;
-  padding: 20px 34px;
 }
 
 .nav__wrap svg {
   width: 24px;
+  height: 24px;
   color: white;
 }
 
@@ -35,7 +37,6 @@
 
 .button__wrap {
   display: flex;
-  padding: 14px 12px;
   width: 100%;
   justify-content: space-between;
   cursor: pointer;
@@ -43,50 +44,19 @@
 }
 
 .main__boxButton {
-  padding: 24px 18px;
-}
-
-.button__wrap:hover {
-  background-color: rgb(31, 31, 31);
-  border-radius: 15px;
+  padding: 24px 10px;
+  width: 100%;
 }
 
 .button__wrap img {
-  width: 36px;
+  width: 40px;
+  height: 40px;
   border-radius: 12px;
 }
 
 .button__box {
   display: flex;
   color: white;
-  gap: 10px;
-  width: 100%;
-}
-
-.updown__arrow {
-  display: flex;
-  margin-top: 5px;
-}
-
-.box2box3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-}
-
-.direct__wrap {
-  display: flex;
-  padding: 20px 34px;
-  width: 100%;
-  justify-content: space-between;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-  height: 100%;
-}
-
-.direct__wrap:hover {
-  background-color: rgb(31, 31, 31);
 }
 
 .direct__wrap a {
@@ -102,7 +72,7 @@
   color: rgb(179, 0, 255);
 }
 
-@media (max-width: 720px) {
+@media (min-width: 721px) {
   .app {
     display: none;
   }

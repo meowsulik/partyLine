@@ -1,7 +1,7 @@
 .app {
   display: flex;
   flex-direction: column;
-  max-height: 100vh;
+
   min-height: 100vh;
   width: 300px;
   background-color: rgb(22, 22, 22);
@@ -9,8 +9,9 @@
   height: 100%;
 }
 
-
 .Link {
+  display: flex;
+  align-items: center;
   gap: 10px;
   transition: 0.3s ease-in-out;
   color: white;
@@ -82,7 +83,8 @@
   display: flex;
   padding: 20px 34px;
   width: 100%;
-  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
   cursor: pointer;
   transition: all 0.3s ease 0s;
   height: 100%;
@@ -100,3 +102,22 @@
   width: 24px;
   height: 24px;
 }
+
+.Link svg {
+  color: #868383;
+  transition: all 0.3s ease 0s;
+}
+
+.nav__wrap p {
+  color: #868383;
+}
+
+.direct {
+  color: #868383;
+}
+
+/* @media (max-width: 720px) {
+  .app {
+    display: none;
+  }
+} */

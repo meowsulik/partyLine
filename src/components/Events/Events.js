@@ -3,12 +3,14 @@ import Header from "../Header/Header";
 import s from "./Events.module.css";
 import { Link } from "react-router-dom";
 import Sidebar from "../Sidebar/Sidebar";
+import Footer from '../Footer/Footer'
 
 const Events = () => {
   return (
+    
     <div className={s.main__wrap}>
       <div className={s.sidebar}>
-        <Sidebar/>
+        <Sidebar />
       </div>
       <div className={s.title__wrap}>
         <Header />
@@ -75,8 +77,8 @@ const Events = () => {
             </div>
           </div>
         </section>
-
       </div>
+      <Footer/>
     </div>
   );
 };
